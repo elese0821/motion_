@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'KoHo';
+}
+
+#section1 {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 6vw;
+    }
+}
+
+#section2 {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project__wrap {
+    width: 90%;
+    margin: 0 auto;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid rgb(99, 99, 99);
+
+        .left {
+            display: flex;
+            padding: 1rem;
+            align-items: center;
+
+            h2 {
+                font-size: 6vw;
+                font-weight: 300;
+                transition: all 0.2s;
+            }
+
+            span {
+                display: block;
+                margin-right: 1rem;
+                color: #a0a0a0;
+                transition: all 0.2s;
+            }
+        }
+
+        .right {
+            transition: all 0.2s;
+        }
+
+        &:hover .left span {
+            transform: translateX(10px);
+        }
+
+        &:hover .left h2 {
+            transform: translateX(10px);
+            opacity: 0.7;
+        }
+
+        &:hover .right {
+            transform: translateX(-10px);
+        }
+    }
+}
+
+.modal__wrap {
+    width: 500px;
+    position: absolute;
+    height: 334.34px;
+    overflow: hidden;
+    pointer-events: none;
+
+    .modal__slider {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: top 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    img {
+        vertical-align: top;
+        width: 100%;
+    }
+}
+
+#section3 {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.cursor,
+.cursorText {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #a00030;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+.cursorText {
+    background-color: transparent;
+}
+
+.modal__wrap #section3 {
+    background-color: #fff;
+    height: 100vh;
+}
